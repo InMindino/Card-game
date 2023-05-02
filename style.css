@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 15%;
+  height: 180px;
+  background-color: rgb(75, 5, 121);
+  color: transparent;
+  font-size: 42px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color .2s, color .2s, transform .2s;
+  cursor: pointer;
+}
+
+.card.open {
+  background-color: bisque;
+  color: rgb(29, 18, 18);
+}
+
+.card.success {
+  background-color: rgb(27, 121, 27);
+  color: white;
+  transform: scale(0.95);
+}
